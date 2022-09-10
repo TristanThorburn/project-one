@@ -1,0 +1,34 @@
+@use "./variables" as *;
+
+header{
+    background-image:url(../../assets/home-box-header-two.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    height:60vh;
+}
+
+.mobile-nav-bar{
+    margin-top:-20px;
+
+    li{
+        list-style-type:none;
+        font-family:$primary-font-family;
+        text-align:right;
+        margin:0px 20px 0px 0px;
+    }
+    a{
+        text-decoration: none;
+        color:$primary-white;
+    }
+}
+h1{
+    text-transform:uppercase;
+    color:$primary-white;
+    font-size:$h-one-font-size-m;
+    line-height:$h-one-line-height-m;
+    font-family:$primary-font-family;
+    font-weight:$primary-font-weight;
+    text-align:center;
+    margin-top:50%;
+}

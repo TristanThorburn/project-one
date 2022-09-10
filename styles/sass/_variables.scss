@@ -6,11 +6,11 @@ $primary-white:#FFFFFF;
 
 
 // FONT-WEIGHT----------------------------------------
-$default-font-weight:600px;
+$primary-font-weight:bold;
 
 
 // FONT-FAMILIES--------------------------------------
-$main-font-family:'Barlow', sans-serif;
+$primary-font-family:'Barlow', sans-serif;
 $secondary-font-family:'Lato', sans-serif;
 
 
@@ -23,6 +23,7 @@ $navigation-font-size:1rem;
 $button-font-size:1rem;
 $body-text-font-size:1rem;
 
+$h-one-font-size-m:4.5rem;
 
 // LINE-HEIGHT------------------------------------------
 $h-one-line-height:126px;
@@ -30,6 +31,8 @@ $h-two-secondary-line-height:92px;
 $navigation-line-height:29px;
 $button-line-height:32px;
 $body-text-line-height:32px;
+
+$h-one-line-height-m:90px;
 
 // LETTER SPACING----------------------------------------
 $default-letter-spacing:1px;

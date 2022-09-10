@@ -1,7 +1,9 @@
 @use "./setup";
 @use "./variables";
-
-
-
+@use "./header";
 
 @use "./mediaqueries";
+
+html{
+    font-size:125%;
+}

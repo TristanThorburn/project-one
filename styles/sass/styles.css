@@ -221,8 +221,55 @@ html {
   overflow: hidden;
 }
 
-@media (min-width: 1px) and (max-with: 767px) {
+header {
+  background-image: url(../../assets/home-box-header-two.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+
+.mobile-nav-bar {
+  margin-top: -20px;
+}
+.mobile-nav-bar li {
+  list-style-type: none;
+  font-family: "Barlow", sans-serif;
+  text-align: right;
+  margin: 0px 20px 0px 0px;
+}
+.mobile-nav-bar a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+h1 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 4.5rem;
+  line-height: 90px;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50%;
+}
+
+@media (min-width: 1px) and (max-width: 767px) {
   .desktop-nav-bar {
     display: none;
   }
+  .pop-out-header {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .mobile-nav-bar {
+    display: none;
+  }
+  .pop-out-header {
+    display: show;
+  }
+}
+html {
+  font-size: 125%;
 }/*# sourceMappingURL=styles.css.map */
