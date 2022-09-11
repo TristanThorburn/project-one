@@ -250,7 +250,7 @@ h1 {
   font-size: 4.5rem;
   line-height: 90px;
   font-family: "Barlow", sans-serif;
-  font-weight: bold;
+  font-weight: 700px;
   text-align: center;
   margin-top: 50%;
 }
@@ -275,7 +275,7 @@ h2 {
   font-size: 2.1rem;
   line-height: 60px;
   font-family: "Barlow", sans-serif;
-  font-weight: bold;
+  font-weight: 600px;
   text-align: center;
 }
 
@@ -284,7 +284,7 @@ h3 {
   color: #FFFFFF;
   font-size: 1.6rem;
   font-family: "Barlow", sans-serif;
-  font-weight: bold;
+  font-weight: 600px;
   letter-spacing: 1px;
   margin: 10px;
   text-align: center;
@@ -294,7 +294,7 @@ h3 {
   color: black;
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
-  font-weight: bold;
+  font-weight: 600px;
   line-height: 29px;
   letter-spacing: 1px;
   text-align: center;
@@ -304,13 +304,14 @@ h3 {
   width: 180px;
   height: 40px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .read-more {
   color: #FFFFFF;
   font-size: 1rem;
   font-family: "Barlow", sans-serif;
-  font-weight: bold;
+  font-weight: 600px;
   line-height: 32px;
   letter-spacing: 1px;
   text-align: center;
@@ -320,6 +321,7 @@ h3 {
   width: 180px;
   height: 40px;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 p {
@@ -415,8 +417,8 @@ footer p {
     display: show;
   }
   h1 {
-    margin-top: 25%;
-    margin-left: 30px;
+    margin-top: 20%;
+    margin-left: 5%;
     width: 30%;
   }
   h2 {
@@ -501,6 +503,75 @@ footer p {
   }
   .gallery-one, .gallery-two, .gallery-three {
     margin: 30px 0px 30px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    height: 80vh;
+  }
+  h1 {
+    font-size: 6.9rem;
+    line-height: 126px;
+    margin-top: 10%;
+  }
+  .pop-out-header {
+    top: 300px;
+    right: -180px;
+  }
+  .pop-out-header img {
+    width: 80%;
+  }
+  .what-is h2 {
+    margin-top: 150px;
+  }
+  .new-and-feature-container {
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .blue-block-one, .blue-block-two {
+    height: 500px;
+    top: 50px;
+  }
+  .info-links-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  .community-svg {
+    margin-top: 30px;
+  }
+  .gallery-container img {
+    width: 90%;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    height: 60vh;
+  }
+  h1 {
+    margin-top: 5%;
+  }
+  .pop-out-header {
+    top: 120px;
+    right: -180px;
+  }
+  .new-and-feature-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  .nemo-img {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .blue-block-one, .blue-block-two {
+    height: 300px;
+  }
+  .blue-block-one {
+    top: 30px;
+    left: -40px;
+  }
+  .blue-block-two {
+    top: 30px;
   }
 }
 html {

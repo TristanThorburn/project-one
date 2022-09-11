@@ -18,7 +18,7 @@
         margin-top:30%;
     }
 }
-
+// ********************************TABLET VERTICAL**************************************************
 @media (min-width:768px){
     // GENERAL-----------------------------------------------------------
     .mobile-nav-bar{
@@ -28,8 +28,8 @@
         display:show;
     }
     h1{
-        margin-top:25%;
-        margin-left:30px;
+        margin-top:20%;
+        margin-left:5%;
         width:30%;
     }
     h2{
@@ -71,7 +71,6 @@
         justify-content:flex-start;
         align-items:center;
      }     
-
     .pop-out-header{
         position:absolute;
         top:360px;
@@ -136,4 +135,100 @@
     .gallery-one, .gallery-two, .gallery-three{
         margin:30px 0px 30px 0px;
     }
+}
+
+// ********************************TABLET HORIZONTAL**************************************************
+@media (min-width:1024px){
+    // GENERAL------------------------------------------------------
+
+    // HEADER-------------------------------------------------------
+    header{
+        height:80vh;
+    }
+    h1{
+        font-size:$h-one-font-size;
+        line-height:$h-one-line-height;
+        margin-top:10%;
+    }
+    .pop-out-header{
+        top:300px;
+        right:-180px;
+
+        img{
+            width:80%;
+        }
+    }
+
+    // SECTION: WHAT-IS----------------------------------------------
+    .what-is h2{
+        margin-top:150px;
+    }
+
+    // SECTION: NEW-AND-FEATURE--------------------------------------
+    .new-and-feature-container{
+        grid-template-rows:repeat(4, 1fr);
+    }
+    .blue-block-one, .blue-block-two{
+        height:500px;
+        top:50px;
+    }
+
+    // SECTION: INFO-LINKS-------------------------------------------
+    .info-links-container{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap:2rem;
+    }
+    .community-svg{
+        margin-top:30px;
+    }
+
+    // SECTION: THIS-MONTH--------------------------------------------
+
+    // SECTION: FINAL-GALLYERY----------------------------------------
+    .gallery-container{
+        img{
+            width:90%;
+        }
+    }
+}
+// *********************************LAPTOP**********************************************************
+@media (min-width:1200px){
+// GENERAL-------------------------------------------------------------
+// HEADER--------------------------------------------------------------
+    header{
+        height:60vh;
+    }
+    h1{
+        margin-top:5%
+    }
+    .pop-out-header{
+        top:120px;
+        right:-180px;
+    }
+
+// SECTION: NEW-AND-FEATURE---------------------------------------------
+// *************************redo this shit******************************
+    .new-and-feature-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap:2rem;
+    }
+    .nemo-img{
+        grid-row:2;
+        grid-column:2;
+    }
+    .blue-block-one, .blue-block-two{
+        height:300px;
+    }
+    .blue-block-one{
+        top:30px;
+        left:-40px;
+    }
+    .blue-block-two{
+        top:30px;
+    }
+
+// SECTION: THIS-MONTH----------------------------------
+    
 }
