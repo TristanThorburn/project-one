@@ -17,6 +17,7 @@
     
 
 h2{
+    text-transform:uppercase;
     color:$primary-white;
     font-size:$h-two-font-size;
     line-height:$h-two-line-height-m;
@@ -26,6 +27,7 @@ h2{
 }
 
 h3{
+    text-transform:uppercase;
     color:$primary-white;
     font-size:$h-three-font-size;
     font-family:$primary-font-family;
@@ -51,7 +53,7 @@ h3{
     margin-bottom:30px;
 }
 
-button, .read-more{
+.read-more{
     color:$primary-white;
     font-size:$button-font-size;
     font-family:$primary-font-family;
@@ -80,6 +82,10 @@ p{
     align-items:center;
 }
 
+img{
+    width:100%;
+}
+
 // SECTION: WHAT-IS-UNDER-THE-SEA--------------------------
 
 // SECTION: NEW-AND-FEATURES---------------------------------
@@ -87,9 +93,6 @@ p{
         margin-top:30px;
     }
     
-    img{
-        max-width:100%;
-    }
 
 .new-and-feature-container{
     display:grid;
@@ -123,6 +126,10 @@ p{
 // SECTION: THIS-MONTH---------------------------------------
 
 // SECTION: FINAL-GALLERY------------------------------------
+.gallery-container{
+    display:flex;
+    flex-direction:column;
+}
 .gallery-one{
     margin-top:30px
 }
