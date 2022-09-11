@@ -1,9 +1,6 @@
 // NAV BAR--------------------------------------------------------
-@media (min-width:1px) and (max-width:767px){
-    .desktop-nav-bar{
-        display:none;
-    }
-    .pop-out-header{
+@media (min-width:1px){
+    .desktop-nav-bar, .pop-out-header, .banner{
         display:none;
     }
 }
@@ -11,7 +8,7 @@
     .mobile-nav-bar{
         display:none;
     }
-    .pop-out-header{
+    .pop-out-header, .banner{
         display:show;
     }
 }

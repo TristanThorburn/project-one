@@ -1,0 +1,9 @@
+@use "./variables" as *;
+
+footer{
+
+    p{
+        color:$primary-black;
+        text-align:center;
+    }
+}

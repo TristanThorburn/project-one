@@ -3,7 +3,8 @@ $primary-blue:#86E0F9;
 $secondary-blue:#0C1423;
 $primary-green:#0F614E;
 $primary-white:#FFFFFF;
-
+$primary-black:black;
+$svg-filter:invert(82%) sepia(39%) saturate(1350%) hue-rotate(170deg) brightness(108%) contrast(95%);
 
 // FONT-WEIGHT----------------------------------------
 $primary-font-weight:bold;
@@ -27,12 +28,13 @@ $h-one-font-size-m:4.5rem;
 
 // LINE-HEIGHT------------------------------------------
 $h-one-line-height:126px;
-$h-two-secondary-line-height:92px;
+$h-two-line-height:92px;
 $navigation-line-height:29px;
 $button-line-height:32px;
 $body-text-line-height:32px;
 
 $h-one-line-height-m:90px;
+$h-two-line-height-m:60px;
 
 // LETTER SPACING----------------------------------------
-$default-letter-spacing:1px;
+$primary-letter-spacing:1px;
