@@ -1,9 +1,11 @@
 @use "./variables" as *;
 
 footer{
-
+    background-color:$primary-blue;
+    
     p{
         color:$primary-black;
         text-align:center;
+        margin:0px;
     }
 }

@@ -2,7 +2,7 @@
 
 // NAV BAR--------------------------------------------------------
 @media (min-width:1px) and (max-width:767px){
-    .desktop-nav-bar, .pop-out-header, .banner, .blue-block-one, .blue-block-two{
+    .desktop-nav-bar, .pop-out-header, .banner{
         display:none;
     }
 }
@@ -43,7 +43,7 @@
     }
     // HEADER------------------------------------------------------------
     header{
-        background-image:url(../../assets/header-image.jpg);
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/header-image.jpg);
         height:70vh;
         position:relative;
     }
@@ -57,6 +57,8 @@
         }
         li{
             font-family:$primary-font-family;
+            font-weight:$primary-font-weight;
+            text-transform:uppercase;
             font-size:calc(1.5 * $body-text-font-size);
             text-align:right;
             margin:0px 30px 0px 0px;
@@ -90,6 +92,11 @@
     }
 
     // SECTION: NEW-AND-FEATURE---------------------------------------
+    .new-and-feature-container{
+        h3{
+            margin-top:-10%;
+        }
+    }
     .new-and-feature-img{
         margin-top:60px;
         position:relative;
@@ -100,14 +107,9 @@
         }
     }
     .blue-block-one, .blue-block-two{
-        background-color:$primary-blue;
-        width:100%;
-        height:400px;
-        position:absolute;
-        top:20px;
-        right:-40px;
-   
-    }
+        top:40px;
+     }
+
     .nemo-img{
         position:relative;
         
@@ -140,10 +142,28 @@
 // ********************************TABLET HORIZONTAL**************************************************
 @media (min-width:1024px){
     // GENERAL------------------------------------------------------
-
+    .flex-start-container{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .flex-end-container{
+        display:flex;
+        flex-direction:column;
+        align-items:flex-end;
+        text-align:right;
+    }
     // HEADER-------------------------------------------------------
     header{
         height:80vh;
+    }
+    .desktop-nav-bar{
+        ul{
+            margin-right:8%;
+        }
+        li{
+            font-size:$body-text-font-size;
+        }
     }
     h1{
         font-size:$h-one-font-size;
@@ -166,13 +186,41 @@
 
     // SECTION: NEW-AND-FEATURE--------------------------------------
     .new-and-feature-container{
-        grid-template-rows:repeat(4, 1fr);
-    }
-    .blue-block-one, .blue-block-two{
-        height:500px;
-        top:50px;
-    }
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap:1rem;
 
+        h3{
+            margin-top:0%;
+        }
+
+        .read-more{
+            margin-bottom:5%;
+        }
+    }
+    .nemo-img{
+        grid-row:2;
+        grid-column:2;
+
+        img{
+            top:34px;
+            right:-102px;
+        }
+    }
+    .new-and-feature-img{
+        img{
+            top:-90px;
+            left:-103px;
+        }
+    }
+    .blue-block-one{
+        top:-60px;
+        left:-80px;
+    }
+    .blue-block-two{
+        top:70px;
+        left:70px;
+    }
     // SECTION: INFO-LINKS-------------------------------------------
     .info-links-container{
         grid-template-columns:1fr 1fr;
@@ -182,8 +230,38 @@
     .community-svg{
         margin-top:30px;
     }
-
+// SECTION:BANNER---------------------------------------
+    .banner{
+        background-image:url(../../assets/banner.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        width:100%;
+        height:40vh;
+    }
     // SECTION: THIS-MONTH--------------------------------------------
+    .desktop-container{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        position:relative;
+
+        .this-month-right{
+            grid-column:span 2;
+        }
+    }
+    .this-month-img{
+        img{
+            top:0px;
+            right:10px;
+        }
+    }
+    .blue-block-three{
+        right:40px;
+    }
+    .this-month{
+        h2{
+            margin-bottom:0px;
+        }
+    }
 
     // SECTION: FINAL-GALLYERY----------------------------------------
     .gallery-container{
@@ -206,29 +284,167 @@
         top:120px;
         right:-180px;
     }
-
+// SECTION:WHAT-IS------------------------------------------------------
+    .what-is{
+        .find-out-more{
+            margin-bottom:90px;
+        }
+    }
 // SECTION: NEW-AND-FEATURE---------------------------------------------
-// *************************redo this shit******************************
-    .new-and-feature-container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:1fr 1fr;
-        gap:2rem;
-    }
-    .nemo-img{
-        grid-row:2;
-        grid-column:2;
-    }
-    .blue-block-one, .blue-block-two{
-        height:300px;
+    .new-and-feature-img{
+        img{
+            top:-100px;
+            left:-120px;
+        }
     }
     .blue-block-one{
-        top:30px;
-        left:-40px;
+        top:-60px;
+        left:-90px;
     }
     .blue-block-two{
         top:30px;
     }
+    .nemo-img{
+        img{
+            top:35px;
+            right:-120px;
+        }
+    }
+    .blue-block-two{
+        top:80px;
+        left:80px;
+    }
+// SECTION:INFO-AND-LINKS-------------------------------
+    .info-links-container{
+        margin-left:13%;
+    }
+    .desktop-info-links{
+        flex-direction:row;
+        position:relative;
+        
+        h3{
+            text-align:left;
+        }
+    }
+    .locations-svg, .community-svg{
+        margin-top:0px;
+    }
+    .locations, .community{
+        margin-top:100px;
+        width:90%
+    }
+    .blog, .in-touch{
+        width:90%;
+    }
+    .locations-svg, .community-svg, .blog-svg, .in-touch-svg{
+        margin-bottom:100px;
+        position:absolute;
+        top:25px;
+        left:-60px;
+    }
+    .locations-svg, .community-svg{
+        top:75px;
+    }
 
 // SECTION: THIS-MONTH----------------------------------
-    
+    .this-month-img{
+        img{
+            right:30px;
+        }
+    }
+    .blue-block-three{
+        right:0px;
+    }
+}
+// **************************1920px DESKTOP****************************************************
+@media (min-width:1920px){
+// HEADER-----------------------------------------------
+    header{
+        height:70vh;
+    }
+    .desktop-nav-bar{
+        ul{
+            margin-right:15%;
+        }
+        li{
+            margin-left:50px;
+            margin-right:50px;
+        }
+    }
+    h1{
+        width:13%;
+        margin-left:20%;
+    }
+    .pop-out-header{
+        top:90px;
+        right:0px;
+
+        img{
+            width:100%;
+        }
+    }
+// SECTION:WHAT-IS-------------------------------------------
+    .what-is{
+        h2{
+            margin-top:200px;
+        }
+    }
+// SECTION:NEW-AND-FEATURE-----------------------------------
+    .new-and-feature-img{
+        margin-bottom:-85px;
+
+        img{
+            top:-110px;
+            left:-192px;
+        }
+    }
+    .blue-block-one{
+        top:-60px;
+        left:-150px;
+    }
+    .nemo-img{
+        margin-bottom:-30px;
+
+        img{
+            top:-23px;
+            right:-192px;
+        }
+    }
+    .blue-block-two{
+        top:40px;
+        left:140px;
+    }
+// SECTION:INFO-LINKS-------------------------------------------
+    .locations-svg, .community-svg{
+        margin-top:100px;
+    }
+    .locations-svg, .community-svg{
+        top:-20px
+    }
+    .blog-svg{
+        top:10px;
+    }
+    .in-touch-svg{
+        top:25px;
+    }
+// SECTION:THIS-MONTH-------------------------------------------
+    .this-month-img{
+        img{
+            width:70%;
+            right:-100px;
+        }
+    }
+    .blue-block-three{
+        width:70%
+    }
+// SECTION:FINAL-GALLERY-----------------------------------------
+    .gallery-container{
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:1rem;
+
+        img{
+            width:100%
+        }
+    }
 }
