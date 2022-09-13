@@ -1,0 +1,107 @@
+@use "./variables" as *;
+// GENERAL--------------------------------------------------
+.blog-body{
+    background-color:$secondary-blue;
+}
+// SECTION: POST-HEADER-IMGS---------------------------------
+.post-header-imgs{
+    display:none;
+}
+// SECTION:ARTICLE-BLOG--------------------------------------
+.article-blog{
+    margin-top:20%;
+
+    h3{
+        margin-top:20%;
+    }
+
+    li{
+    color:$primary-white;
+    font-size:$body-text-font-size;
+    font-family:$secondary-font-family;
+    line-height:$body-text-line-height;
+    }
+}
+.article-about{
+    border-right:5px solid $primary-green;
+    border-bottom:5px solid $primary-green;
+}
+.mobile-side-blog-img{
+    margin-top:20%;
+
+    img{
+    box-shadow: 12px 12px 2px 1px $primary-green;
+    }
+}
+.recent-posts{
+    border-right:5px solid $primary-green;
+    border-bottom:5px solid $primary-green;
+}
+.mobile-blog-post-img{
+    img{
+        box-shadow: -12px 12px 2px 1px $primary-blue;
+    }
+}
+.right-blog{
+    margin-top:20%;
+
+    h2{
+        margin-top:20%;
+    }
+
+    .blog-format-desktop{
+        display:none;
+    }
+}
+.author{
+        text-align:center;
+}
+.blog-border{
+    padding-left:5px;
+    border-left:5px solid $primary-blue;
+    border-bottom:5px solid $primary-blue;
+}
+// SECTION:COMMENTS--------------------------------------------
+.comments{
+    margin-top:20%;
+    border-bottom:5px solid $primary-blue;
+}
+.commentor{
+    text-align:center;
+}
+// SECTION:ADD-COMMENTS----------------------------------------
+.add-comment{
+    margin-top:20%;
+    margin-bottom:20%;
+}
+::placeholder{
+    color:$primary-white;
+    font-size:$body-text-font-size;
+    font-family:$secondary-font-family;
+}
+#user-name, #user-email, #user-comment{
+    border:none;
+    height:2rem;
+    width:100%;
+    margin-bottom:5%;
+    background-color:$secondary-blue;
+    border-bottom:3px solid $primary-blue;
+}
+#user-comment{
+    height:10rem;
+    border:3px solid $primary-blue;
+
+}
+.post-comment{
+    color:$primary-white;
+    font-size:$button-font-size;
+    font-family:$primary-font-family;
+    font-weight:$primary-font-weight;
+    line-height:$button-line-height;
+    letter-spacing:$primary-letter-spacing;
+    text-align:center;
+    background-color:$primary-green;
+    border:2px solid $primary-green;
+    width:100%;
+    height:2rem;
+}

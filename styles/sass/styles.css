@@ -228,6 +228,7 @@ header {
   width: 100%;
   height: 60vh;
   margin-bottom: -35px;
+  padding-top: 1%;
 }
 
 .mobile-nav-bar {
@@ -437,6 +438,128 @@ footer p {
   margin: 0px;
 }
 
+.blog-body {
+  background-color: #0C1423;
+}
+
+.post-header-imgs {
+  display: none;
+}
+
+.article-blog {
+  margin-top: 20%;
+}
+.article-blog h3 {
+  margin-top: 20%;
+}
+.article-blog li {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  line-height: 32px;
+}
+
+.article-about {
+  border-right: 5px solid #0F614E;
+  border-bottom: 5px solid #0F614E;
+}
+
+.mobile-side-blog-img {
+  margin-top: 20%;
+}
+.mobile-side-blog-img img {
+  box-shadow: 12px 12px 2px 1px #0F614E;
+}
+
+.recent-posts {
+  border-right: 5px solid #0F614E;
+  border-bottom: 5px solid #0F614E;
+}
+
+.mobile-blog-post-img img {
+  box-shadow: -12px 12px 2px 1px #86E0F9;
+}
+
+.right-blog {
+  margin-top: 20%;
+}
+.right-blog h2 {
+  margin-top: 20%;
+}
+.right-blog .blog-format-desktop {
+  display: none;
+}
+
+.author {
+  text-align: center;
+}
+
+.blog-border {
+  padding-left: 5px;
+  border-left: 5px solid #86E0F9;
+  border-bottom: 5px solid #86E0F9;
+}
+
+.comments {
+  margin-top: 20%;
+  border-bottom: 5px solid #86E0F9;
+}
+
+.commentor {
+  text-align: center;
+}
+
+.add-comment {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+::-moz-placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+::placeholder {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+#user-name, #user-email, #user-comment {
+  border: none;
+  height: 2rem;
+  width: 100%;
+  margin-bottom: 5%;
+  background-color: #0C1423;
+  border-bottom: 3px solid #86E0F9;
+}
+
+#user-comment {
+  height: 10rem;
+  border: 3px solid #86E0F9;
+}
+
+.post-comment {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600px;
+  line-height: 32px;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #0F614E;
+  border: 2px solid #0F614E;
+  width: 100%;
+  height: 2rem;
+}
+
 @media (min-width: 1px) and (max-width: 767px) {
   .desktop-nav-bar, .pop-out-header, .banner {
     display: none;
@@ -475,6 +598,7 @@ footer p {
   }
   header {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/header-image.jpg);
+    background-size: cover;
     height: 70vh;
     position: relative;
   }
