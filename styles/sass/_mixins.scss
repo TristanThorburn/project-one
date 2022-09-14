@@ -1,0 +1,13 @@
+
+
+@mixin grid-spacing{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:1rem;
+}
+
+@mixin flex-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}

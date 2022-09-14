@@ -1,8 +1,11 @@
 @use "./variables" as *;
+@use "./mixins" as *;
+
 // GENERAL--------------------------------------------------
 .blog-body{
     background-color:$secondary-blue;
 }
+
 // SECTION: POST-HEADER-IMGS---------------------------------
 .post-header-imgs{
     display:none;
@@ -62,6 +65,10 @@
     border-bottom:5px solid $primary-blue;
 }
 // SECTION:COMMENTS--------------------------------------------
+.comment-one, .comment-two{
+    @include flex-container();
+
+}
 .comments{
     margin-top:20%;
     border-bottom:5px solid $primary-blue;

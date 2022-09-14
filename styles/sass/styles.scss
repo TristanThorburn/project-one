@@ -1,5 +1,6 @@
 @use "./setup";
 @use "./variables";
+@use "./mixins";
 @use "./header";
 @use "./body";
 @use "./footer";
@@ -7,6 +8,7 @@
 @use "./blog-body";
 
 @use "./mediaqueries";
+@use "./blog-media-queries";
 
 html{
     font-size:125%;
