@@ -7,9 +7,10 @@
 
 @use "./blog-body";
 
-@use "./mediaqueries";
+@use "./media-queries";
 @use "./blog-media-queries";
 
 html{
     font-size:125%;
+    overflow-x: hidden;
 }
