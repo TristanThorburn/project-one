@@ -1,0 +1,95 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+// TABLET 768px***************************************************************************************
+@media (min-width:768px){
+    .contact-header{
+    background-image:url(../../assets/contact-header.jpg);
+    }
+    .contact-body{
+        margin-top:15%;
+    }
+    #contact{
+        border:none;
+    }
+    .contact-form{
+    background-color:$primary-green;
+    padding:1%;
+    margin-top:15%;
+    margin-bottom:15%;
+
+    #user-name, #user-email, #user-message{
+        background-color:$primary-green;
+        }
+    }
+}
+// HORIZONTAL TABLET 1024px*******************************************************************************
+@media (min-width:1024px){
+    .contact-header{
+        height:60vh;
+    }
+    .contact-body{
+        margin-top:10%;
+    }
+    .contact-form{
+        margin-top:10%;
+        margin-bottom:10%;
+        box-shadow:-25px 30px 2px 1px $primary-blue;
+    }
+}
+// LAPTOP 1200px*******************************************************************************************
+@media (min-width:1200px){
+    .contact-header{
+        height:40vh;
+        h1{
+            font-size:calc(1.43 * $h-two-font-size);
+            margin-left:38%;
+            width:100%;
+            text-align:left;
+        }
+    }
+    .contact-body{
+        display:flex;
+        margin-top:10%;
+        margin-bottom:0%;
+    }
+    .contact-desktop-styling{
+        width:30%
+    }
+    .social-links{
+        margin-left:-21%;
+        img{
+            width:1.2rem;
+        }
+        
+    }
+    #contact{
+        h2, p{
+            margin-top:0%;
+            margin-bottom:0%;
+            text-align:left;
+        }
+    }
+    .contact-form{
+        width:70%;
+        transform:translate(50px, -360px);
+    }
+}
+// DESKTOP 1920px**********************************************************************************
+@media (min-width:1920px){
+    .contact-header{
+        height:65vh;
+
+        h1{
+            margin-top:15%;
+            margin-left:37%;
+        }
+    }
+    .social-links{
+        width:50%;
+        margin-left:-7%;
+    }
+    .contact-form{
+        transform:translate(50px, -500px);
+    }
+}

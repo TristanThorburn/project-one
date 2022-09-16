@@ -287,8 +287,7 @@
     }
 // SECTION:COMMENTS:------------------------------------
     .comments{
-        grid-template-columns:1fr 0.5fr 2.5fr;
-        gap:2rem;
+        @include desktop-grid();
         margin-top:2%;
         
         h3{
@@ -309,7 +308,6 @@
     }
 // SECTION:ADD-COMMENTS:-------------------------------
     .add-comment{
-        grid-template-columns:1fr 0.5fr 2.5fr;
-        gap:2rem;
+        @include desktop-grid();
     }
 }

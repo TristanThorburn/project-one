@@ -1,14 +1,17 @@
 @use "./setup";
 @use "./variables";
 @use "./mixins";
+@use "./general";
 @use "./header";
 @use "./body";
 @use "./footer";
 
 @use "./blog-body";
+@use "./contact-body";
 
 @use "./media-queries";
 @use "./blog-media-queries";
+@use "./contact-meda-queries";
 
 html{
     font-size:125%;

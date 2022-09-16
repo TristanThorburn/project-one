@@ -1,0 +1,41 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.contact-body{
+    margin-top:30%;
+
+    p{
+        text-align:center;
+    }
+}
+.social-links{
+    display:flex;
+    justify-content:space-evenly;
+
+    img{
+        filter:$socials-filter;
+        width:2rem;
+    }
+}
+#contact{
+    border-left:5px solid $primary-green;
+    border-bottom:5px solid $primary-green;
+    
+    h2{
+        font-size:calc(0.71 * $h-two-font-size);
+    }
+}
+.contact-form{
+    margin-top:30%;
+    margin-bottom:30%;
+}
+#user-message{
+    @include form-user-info;
+    @include form-text-input;
+}
+.send-message{
+    @include submit-button;
+    background-color:$primary-black;
+    border:2px solid $primary-black;
+    margin-top:5%;
+}

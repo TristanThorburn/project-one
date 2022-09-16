@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristan Thorburn Project One Contact Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/sass/styles.css">
+</head>
+<header class="contact-header">
+    <nav class="desktop-nav-bar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html#about">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav><!--.desktop-nav-bar end-->
+    <nav class="mobile-nav-bar">
+        <ul>
+            <li><a href="#Menu">Menu</a></li>
+        </ul>
+    </nav><!--.mobile-nav-bar end-->
+    <div class="header-container">
+        <h1>Get in touch</h1>
+    </div><!--header-container end-->
+</header>
+<body class="contact-background">
+    <section class="wrapper contact-body">
+        <div class="contact-desktop-styling">
+            <div class="social-links">
+                <a href="https://www.facebook.com"><img src="./assets/facebook-svgrepo-com.svg" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com"><img src="./assets/instagram-icon-svgrepo-com.svg" alt="Instagram Icon"></a>
+                <a href="https://www.twitter.com"><img src="./assets/twitter-svgrepo-com.svg" alt="Twitter Icon"></a>
+                <a href="https://www.whatsapp.com"><img src="./assets/whats-app-svgrepo-com.svg" alt="Whats App Icon"></a>
+            </div>
+            <div id="contact">
+                <h2>info@email.com</h2>
+                <p>123-456-7890</p>
+                <p id="location">123 Queen Stret West</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
+            </div>
+        </div>
+        <form action="#" method="#" name="blog-comment" class="contact-form">
+            <div class="user-info">
+                <div class="user-name">
+                    <label for="user-name" class="sr-only">Name</label>
+                    <input type="text" id="user-name" name="user-name"  placeholder="Name">
+                </div>
+                <div class="user-email">
+                    <label for="user-email" class="sr-only">Email</label>
+                    <input type="text" id="user-email" name="user-email" placeholder="Email">
+                </div>
+            </div><!--.user-info end-->
+            <div class="comment-submit">
+                <label for="comment" class="sr-only">Message</label>
+                <textarea name="user-message" id="user-message" class="user-message" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="send-message">Submit</button>
+        </form><!--.contact-form end-->    
+    </section>
+</body>
+<footer>
+    <p>Copyright ©️ 2018 <a href="https://www.junocollege.com">Juno College</a></p>
+</footer>
+</html>
