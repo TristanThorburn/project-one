@@ -266,12 +266,20 @@ h3 {
   text-align: center;
   background-color: #86E0F9;
   text-decoration: none;
-  border: 2px solid #86E0F9;
   width: 180px;
   height: 40px;
   margin-bottom: 30px;
   margin-top: 30px;
   padding-top: 4px;
+  transition: all 0.5s;
+}
+.find-out-more:hover, .find-out-more :focus {
+  background-color: #0dc1f3;
+}
+.find-out-more:active {
+  color: #86E0F9;
+  background-color: black;
+  border: 2px solid #86E0F9;
 }
 
 .read-more {
@@ -284,11 +292,20 @@ h3 {
   text-align: center;
   background-color: black;
   text-decoration: none;
-  border: 2px solid black;
   width: 180px;
   height: 40px;
   margin-bottom: 30px;
   margin-top: 30px;
+  padding-top: 4px;
+  transition: all 0.5s;
+}
+.read-more:hover, .read-more :focus {
+  background-color: gray;
+}
+.read-more:active {
+  color: black;
+  background-color: #FFFFFF;
+  border: 2px solid black;
 }
 
 p {
@@ -352,8 +369,7 @@ h1 {
   position: relative;
 }
 .new-and-feature-img img {
-  z-index: 100;
-  position: relative;
+  box-shadow: -19px 16px 2px 1px #86E0F9;
 }
 
 .new-and-feature-container {
@@ -371,17 +387,7 @@ h1 {
   position: relative;
 }
 .nemo-img img {
-  position: relative;
-  z-index: 100;
-}
-
-.blue-block-one, .blue-block-two {
-  background-color: #86E0F9;
-  width: 100%;
-  height: 95%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  box-shadow: -19px 16px 2px 1px #86E0F9;
 }
 
 .info-links-container {
@@ -394,6 +400,13 @@ h1 {
   height: 50px;
   filter: invert(82%) sepia(39%) saturate(1350%) hue-rotate(170deg) brightness(108%) contrast(95%);
   margin-top: 30px;
+  transition: all 0.5s;
+}
+.info-links-container img:hover, .info-links-container img :focus {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(234deg) brightness(106%) contrast(101%);
+}
+.info-links-container img:active {
+  filter: invert(28%) sepia(75%) saturate(432%) hue-rotate(116deg) brightness(92%) contrast(96%);
 }
 
 .in-touch p {
@@ -404,17 +417,7 @@ h1 {
   position: relative;
 }
 .this-month-img img {
-  z-index: 100;
-  position: relative;
-}
-
-.blue-block-three {
-  background-color: #86E0F9;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  box-shadow: -20px 24px 2px 1px #86E0F9;
 }
 
 .gallery-container {
@@ -546,11 +549,19 @@ footer p {
   margin-bottom: 5%;
   background-color: #0C1423;
   border-bottom: 3px solid #86E0F9;
+  transition: all 0.5s;
+}
+#user-name:hover, #user-name :focus, #user-email:hover, #user-email :focus, #user-comment:hover, #user-comment :focus {
+  border-bottom: 3px solid #0F614E;
 }
 
 #user-comment {
   height: 10rem;
   border: 3px solid #86E0F9;
+  transition: all 0.5s;
+}
+#user-comment:hover, #user-comment :focus {
+  border: 3px solid #0F614E;
 }
 
 .post-comment {
@@ -563,7 +574,16 @@ footer p {
   text-align: center;
   width: 100%;
   height: 2rem;
+  transition: all 0.5s;
+  border: none;
   background-color: #0F614E;
+}
+.post-comment:hover, .post-comment :focus {
+  background-color: #19a383;
+}
+.post-comment:active {
+  color: #0F614E;
+  background-color: #FFFFFF;
   border: 2px solid #0F614E;
 }
 
@@ -581,6 +601,13 @@ footer p {
 .social-links img {
   filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(234deg) brightness(106%) contrast(101%);
   width: 2rem;
+  transition: all 0.5s;
+}
+.social-links img:hover, .social-links img :focus {
+  filter: invert(82%) sepia(39%) saturate(1350%) hue-rotate(170deg) brightness(108%) contrast(95%);
+}
+.social-links img:active {
+  filter: invert(28%) sepia(75%) saturate(432%) hue-rotate(116deg) brightness(92%) contrast(96%);
 }
 
 #contact {
@@ -595,6 +622,9 @@ footer p {
   margin-top: 30%;
   margin-bottom: 30%;
 }
+.contact-form #user-name:hover, .contact-form #user-name :focus, .contact-form #user-email:hover, .contact-form #user-email :focus {
+  border-bottom: 3px solid #0C1423;
+}
 
 #user-message {
   border: none;
@@ -603,8 +633,13 @@ footer p {
   margin-bottom: 5%;
   background-color: #0C1423;
   border-bottom: 3px solid #86E0F9;
+  transition: all 0.5s;
   height: 10rem;
   border: 3px solid #86E0F9;
+  transition: all 0.5s;
+}
+#user-message:hover, #user-message :focus {
+  border: 3px solid #0C1423;
 }
 
 .send-message {
@@ -617,9 +652,19 @@ footer p {
   text-align: center;
   width: 100%;
   height: 2rem;
+  transition: all 0.5s;
+  border: none;
   background-color: black;
   border: 2px solid black;
   margin-top: 5%;
+}
+.send-message:hover, .send-message :focus {
+  background-color: gray;
+}
+.send-message:active {
+  color: black;
+  background-color: #FFFFFF;
+  border: 2px solid black;
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
@@ -708,18 +753,13 @@ footer p {
     position: relative;
   }
   .new-and-feature-img img {
-    z-index: 100;
-    position: relative;
-  }
-  .blue-block-one, .blue-block-two {
-    top: 40px;
+    box-shadow: -30px 35px 2px 1px #86E0F9;
   }
   .nemo-img {
     position: relative;
   }
   .nemo-img img {
-    position: relative;
-    z-index: 100;
+    box-shadow: -30px 35px 2px 1px #86E0F9;
   }
   .locations-svg {
     margin-top: 30px;
@@ -778,25 +818,21 @@ footer p {
   .new-and-feature-container .read-more {
     margin-bottom: 5%;
   }
+  .new-and-feature-img img {
+    box-shadow: 30px 35px 2px 1px #86E0F9;
+    position: absolute;
+    top: -216px;
+    left: -102px;
+  }
   .nemo-img {
     grid-row: 2;
     grid-column: 2;
   }
   .nemo-img img {
-    top: 34px;
+    box-shadow: -30px 35px 2px 1px #86E0F9;
+    position: absolute;
+    top: -97px;
     right: -102px;
-  }
-  .new-and-feature-img img {
-    top: -90px;
-    left: -103px;
-  }
-  .blue-block-one {
-    top: -60px;
-    left: -80px;
-  }
-  .blue-block-two {
-    top: 70px;
-    left: 70px;
   }
   .info-links-container {
     grid-template-columns: 1fr 1fr;
@@ -825,9 +861,6 @@ footer p {
     top: 0px;
     right: 10px;
   }
-  .blue-block-three {
-    right: 40px;
-  }
   .this-month h2 {
     margin-bottom: 0px;
   }
@@ -849,19 +882,15 @@ footer p {
   .what-is .find-out-more {
     margin-bottom: 90px;
   }
+  .new-and-feature h3 {
+    margin-top: 5%;
+  }
   .new-and-feature-img img {
-    top: -100px;
+    top: -214px;
     left: -120px;
   }
-  .blue-block-one {
-    top: -60px;
-    left: -90px;
-  }
-  .blue-block-two {
-    top: 30px;
-  }
   .nemo-img img {
-    top: 35px;
+    top: -144px;
     right: -120px;
   }
   .blue-block-two {
@@ -900,9 +929,6 @@ footer p {
   .this-month-img img {
     right: 30px;
   }
-  .blue-block-three {
-    right: 0px;
-  }
 }
 @media (min-width: 1920px) {
   header {
@@ -929,27 +955,25 @@ footer p {
   .what-is h2 {
     margin-top: 200px;
   }
+  .new-and-feature h3 {
+    margin-top: 15%;
+  }
+  .new-and-feature-container .read-more {
+    margin-bottom: 15%;
+  }
   .new-and-feature-img {
     margin-bottom: -85px;
   }
   .new-and-feature-img img {
-    top: -110px;
+    top: -331px;
     left: -192px;
-  }
-  .blue-block-one {
-    top: -60px;
-    left: -150px;
   }
   .nemo-img {
     margin-bottom: -30px;
   }
   .nemo-img img {
-    top: -23px;
+    top: -264px;
     right: -192px;
-  }
-  .blue-block-two {
-    top: 40px;
-    left: 140px;
   }
   .locations-svg, .community-svg {
     margin-top: 100px;
@@ -966,9 +990,6 @@ footer p {
   .this-month-img img {
     width: 70%;
     right: -100px;
-  }
-  .blue-block-three {
-    width: 70%;
   }
   .gallery-container {
     display: grid;

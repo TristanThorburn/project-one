@@ -83,12 +83,25 @@
 }
 #user-name, #user-email, #user-comment{
     @include form-user-info();
+    &:hover, :focus{
+        border-bottom:3px solid $primary-green;
+    }
 }
 #user-comment{
     @include form-text-input();
+    &:hover, :focus{
+        border:3px solid $primary-green;
+    }
 }
 .post-comment{
     @include submit-button;
     background-color:$primary-green;
-    border:2px solid $primary-green;
+    &:hover, :focus{
+        background-color:lighten($primary-green, 15%)
+    }
+    &:active{
+        color:$primary-green;
+        background-color:$primary-white;
+        border:2px solid $primary-green;
+    }
 }

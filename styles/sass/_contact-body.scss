@@ -15,6 +15,14 @@
     img{
         filter:$socials-filter;
         width:2rem;
+        transition:all 0.5s;
+        
+        &:hover, :focus{
+            filter:$svg-filter;
+        }
+        &:active{
+            filter:$active-svg-filter;
+        }
     }
 }
 #contact{
@@ -28,14 +36,31 @@
 .contact-form{
     margin-top:30%;
     margin-bottom:30%;
+    #user-name, #user-email{
+        &:hover, :focus{
+            border-bottom:3px solid $secondary-blue;
+        }
+    }
 }
+
 #user-message{
     @include form-user-info;
     @include form-text-input;
+    &:hover, :focus{
+        border:3px solid $secondary-blue;
+    }
 }
 .send-message{
     @include submit-button;
     background-color:$primary-black;
     border:2px solid $primary-black;
     margin-top:5%;
+    &:hover, :focus{
+        background-color:lighten($primary-black, 50%)
+    }
+    &:active{
+        color:$primary-black;
+        background-color:$primary-white;
+        border:2px solid $primary-black;
+    }
 }
