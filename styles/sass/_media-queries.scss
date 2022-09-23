@@ -2,7 +2,7 @@
 
 // NAV BAR--------------------------------------------------------
 @media (min-width:1px) and (max-width:767px){
-    .desktop-nav-bar, .pop-out-header, .banner{
+    .pop-out-header, .banner{
         display:none;
     }
 }
@@ -49,24 +49,16 @@
         position:relative;
     }
      .desktop-nav-bar{
+        position:static;
+        background:none;
         margin-top:-20px;
 
         ul{
-            display:flex;
-            list-style-type:none;
+            flex-direction:row;
             justify-content:flex-end;
         }
         li{
-            font-family:$primary-font-family;
-            font-weight:$primary-font-weight;
-            text-transform:uppercase;
-            font-size:$body-text-font-size;
-            text-align:right;
             margin:0px 30px 0px 0px;
-        }
-        a{
-            text-decoration:none;
-            color:$primary-white;
         }
      }
      .header-container{

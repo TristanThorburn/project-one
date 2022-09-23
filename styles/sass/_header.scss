@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
 header{
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/home-box-header-two.jpg);
@@ -9,8 +10,13 @@ header{
     margin-bottom:-35px;
     padding-top:1%;
 }
+
 .mobile-nav-bar{
-    margin-top:-20px;
+    margin-top:-15px;
+    position:fixed;
+    z-index: 100;
+    top:25px;
+    right:10px;
 
     li{
         list-style-type:none;
@@ -23,6 +29,64 @@ header{
         color:$primary-white;
     }
 }
+
+.bar{
+    display:block;
+    background-color:$primary-white;
+    width:30px;
+    height:5px;
+    margin:5px auto;
+    transition:all 0.5s;
+}
+
+.hamburger.active :nth-child(1){
+    transform:translateY(6px) rotate(45deg);
+}
+
+.hamburger.active :nth-child(2){
+    display:none;
+}
+
+.hamburger.active :nth-child(3){
+    transform:translateY(-4px) rotate(-45deg);
+}
+
+.desktop-nav-bar{
+    background-color:$primary-blue;
+    width:100%;
+    position:fixed;
+    z-index: 100;
+    top:50px;
+    left:-100%;
+    transition:all 1s;
+
+        ul{
+            @include flex-container;
+            list-style-type:none;
+            justify-content: center;
+        }
+        li{
+            font-family:$primary-font-family;
+            font-weight:$primary-font-weight;
+            text-transform:uppercase;
+            font-size:$body-text-font-size;
+            text-align:right;
+            margin:10px 30px 10px 0px;
+        }
+        a{
+            text-decoration:none;
+            color:$primary-white;
+            transition:all 0.5s;
+
+            &:hover, :focus{
+                color:$secondary-blue;
+                }
+        }
+}
+.desktop-nav-bar.active{
+    left:0%;
+}
+    
 h1{
     text-transform:uppercase;
     color:$primary-white;

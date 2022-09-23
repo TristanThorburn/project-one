@@ -13,19 +13,26 @@
     <link rel="stylesheet" href="./styles/sass/styles.css">
 </head>
 <header class="blog-header">
+    <nav class="mobile-nav-bar">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav><!--.mobile-nav-bar end-->
     <nav class="desktop-nav-bar">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html#contact">Contact</a></li>
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./blog.html#about" class="nav-link">About</a></li>
+            <li><a href="./blog.html" class="nav-link">Blog</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav><!--.desktop-nav-bar end-->
-    <nav class="mobile-nav-bar">
+    <!-- <nav class="mobile-nav-bar">
         <ul>
             <li><a href="#Menu">Menu</a></li>
         </ul>
-    </nav><!--.mobile-nav-bar end-->
+    </nav>.mobile-nav-bar end -->
     <h1>Blog</h1>
 </header>
 <body class="blog-background">
@@ -120,6 +127,8 @@
             <button type="submit" class="post-comment">Post Comment</button>
         </form>
     </section><!--.add-comment end-->
+
+    <script src="./javascript/app.js"></script>
 </body>
 <footer>
     <p>Copyright ©️ 2018 <a href="https://www.junocollege.com">Juno College</a></p>

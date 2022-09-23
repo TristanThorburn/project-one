@@ -340,7 +340,11 @@ header {
 }
 
 .mobile-nav-bar {
-  margin-top: -20px;
+  margin-top: -15px;
+  position: fixed;
+  z-index: 100;
+  top: 25px;
+  right: 10px;
 }
 .mobile-nav-bar li {
   list-style-type: none;
@@ -351,6 +355,64 @@ header {
 }
 .mobile-nav-bar a {
   color: #FFFFFF;
+}
+
+.bar {
+  display: block;
+  background-color: #FFFFFF;
+  width: 30px;
+  height: 5px;
+  margin: 5px auto;
+  transition: all 0.5s;
+}
+
+.hamburger.active :nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active :nth-child(2) {
+  display: none;
+}
+
+.hamburger.active :nth-child(3) {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.desktop-nav-bar {
+  background-color: #86E0F9;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 50px;
+  left: -100%;
+  transition: all 1s;
+}
+.desktop-nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+}
+.desktop-nav-bar li {
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: right;
+  margin: 10px 30px 10px 0px;
+}
+.desktop-nav-bar a {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.desktop-nav-bar a:hover, .desktop-nav-bar a :focus {
+  color: #0C1423;
+}
+
+.desktop-nav-bar.active {
+  left: 0%;
 }
 
 h1 {
@@ -668,7 +730,7 @@ footer p {
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
-  .desktop-nav-bar, .pop-out-header, .banner {
+  .pop-out-header, .banner {
     display: none;
   }
 }
@@ -710,24 +772,16 @@ footer p {
     position: relative;
   }
   .desktop-nav-bar {
+    position: static;
+    background: none;
     margin-top: -20px;
   }
   .desktop-nav-bar ul {
-    display: flex;
-    list-style-type: none;
+    flex-direction: row;
     justify-content: flex-end;
   }
   .desktop-nav-bar li {
-    font-family: "Barlow", sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-align: right;
     margin: 0px 30px 0px 0px;
-  }
-  .desktop-nav-bar a {
-    text-decoration: none;
-    color: #FFFFFF;
   }
   .header-container {
     display: flex;

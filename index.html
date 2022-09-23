@@ -13,19 +13,24 @@
     <link rel="stylesheet" href="./styles/sass/styles.css">
 </head>
 <header>
+    <nav class="mobile-nav-bar">
+        <!-- <ul>
+            <li><a href="#Menu">Menu</a></li>
+        </ul> -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav><!--.mobile-nav-bar end-->
     <nav class="desktop-nav-bar">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./blog.html#about">About</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./blog.html#about" class="nav-link">About</a></li>
+            <li><a href="./blog.html" class="nav-link">Blog</a></li>
+            <li><a href="./contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav><!--.desktop-nav-bar end-->
-    <nav class="mobile-nav-bar">
-        <ul>
-            <li><a href="#Menu">Menu</a></li>
-        </ul>
-    </nav><!--.mobile-nav-bar end-->
     <div class="header-container">
         <h1>Under the sea</h1>
         <div class="pop-out-header">
@@ -136,6 +141,8 @@
             </div>
         </div><!--.gallery-container end-->
     </section><!--.final-gallery end-->
+
+    <script src="./javascript/app.js"></script>
 </body>
 <footer>
     <p>Copyright ©️ 2018 <a href="https://www.junocollege.com">Juno College</a></p>
