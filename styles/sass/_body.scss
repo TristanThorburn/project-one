@@ -67,19 +67,46 @@
     }
 }
 
-// SECTION: FINAL-GALLERY------------------------------------
-.gallery-container{
-    display:flex;
-    flex-direction:column;
-}
-.gallery-one{
-    margin-top:30px
-}
+// SECTION:CAROUSEL------------------------------------------
+.carousel{
+    background-color:$primary-green;
+    min-height:25vh;
 
-.gallery-two{
-    margin:15px 0px 15px 0px
-}
+    .carousel-container{
+        display:flex;
+    } 
+    .carousel-images{
+        width:100%;
+        margin-top:2.5vh;
+    }
+    .next-button, .prev-button{
+        margin-top: 10vh;
+    }
+    .next-button{
+        rotate:180deg;
+    }
+    .carousel-button{
+        position: relative;
+    }
 
-.gallery-three{
-    margin-bottom:30px;
+    ul{
+        padding:0;
+        margin:0;
+        list-style:none;
+        position:relative;
+    }
+    button{
+        height: 30px;
+        width: 30px;
+
+        img{
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    }
+    li{
+        position:absolute;
+        top:0;
+    }
 }

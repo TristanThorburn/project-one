@@ -482,21 +482,44 @@ h1 {
   box-shadow: -20px 24px 2px 1px #86E0F9;
 }
 
-.gallery-container {
+.carousel {
+  background-color: #0F614E;
+  min-height: 25vh;
+}
+.carousel .carousel-container {
   display: flex;
-  flex-direction: column;
 }
-
-.gallery-one {
-  margin-top: 30px;
+.carousel .carousel-images {
+  width: 100%;
+  margin-top: 2.5vh;
 }
-
-.gallery-two {
-  margin: 15px 0px 15px 0px;
+.carousel .next-button, .carousel .prev-button {
+  margin-top: 10vh;
 }
-
-.gallery-three {
-  margin-bottom: 30px;
+.carousel .next-button {
+  rotate: 180deg;
+}
+.carousel .carousel-button {
+  position: relative;
+}
+.carousel ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+.carousel button {
+  height: 30px;
+  width: 30px;
+}
+.carousel button img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.carousel li {
+  position: absolute;
+  top: 0;
 }
 
 footer {
