@@ -221,6 +221,10 @@ html {
   overflow: hidden;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .wrapper {
   max-width: 1620px;
   width: 80%;
@@ -364,6 +368,7 @@ header {
   height: 5px;
   margin: 5px auto;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .hamburger.active :nth-child(1) {
@@ -482,44 +487,60 @@ h1 {
   box-shadow: -20px 24px 2px 1px #86E0F9;
 }
 
-.carousel {
+.carousel-gallery {
   background-color: #0F614E;
-  min-height: 25vh;
-}
-.carousel .carousel-container {
-  display: flex;
-}
-.carousel .carousel-images {
-  width: 100%;
-  margin-top: 2.5vh;
-}
-.carousel .next-button, .carousel .prev-button {
-  margin-top: 10vh;
-}
-.carousel .next-button {
-  rotate: 180deg;
-}
-.carousel .carousel-button {
   position: relative;
 }
-.carousel ul {
-  padding: 0;
-  margin: 0;
+.carousel-gallery .carousel {
+  height: 30vh;
+  overflow: hidden;
+}
+.carousel-gallery .track {
+  height: 100%;
+  position: relative;
   list-style: none;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  top: 7%;
 }
-.carousel button {
+.carousel-gallery .slide {
+  width: 100%;
+  height: 26vh;
+  position: absolute;
+  transition: all 0.5s;
+}
+.carousel-gallery .slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.carousel-gallery .carousel-button {
+  position: absolute;
+  z-index: 10;
   height: 30px;
   width: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 50%;
+  background-color: #0C1423;
+  color: #FFFFFF;
+  cursor: pointer;
 }
-.carousel button img {
-  position: absolute;
-  top: 0;
-  left: 0;
+.carousel-gallery .carousel-button:hover, .carousel-gallery .carousel-button :focus {
+  background-color: gray;
 }
-.carousel li {
-  position: absolute;
-  top: 0;
+.carousel-gallery .carousel-button:active {
+  color: black;
+  background-color: #FFFFFF;
+  border: 2px solid black;
+}
+.carousel-gallery .next-button {
+  right: 4%;
+}
+.carousel-gallery .prev-button {
+  left: 4%;
 }
 
 footer {
@@ -753,7 +774,7 @@ footer p {
 }
 
 @media (min-width: 1px) and (max-width: 767px) {
-  .pop-out-header, .banner {
+  .pop-out-header, .banner, .final-gallery {
     display: none;
   }
 }
@@ -768,7 +789,7 @@ footer p {
   }
 }
 @media (min-width: 768px) {
-  .mobile-nav-bar {
+  .mobile-nav-bar, .carousel-gallery {
     display: none;
   }
   .pop-out-header, .banner {
@@ -845,10 +866,17 @@ footer p {
     width: 80%;
   }
   .gallery-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery-container {
     flex-direction: row;
   }
   .gallery-one, .gallery-two, .gallery-three {
     margin: 30px 0px 30px 0px;
+  }
+  .carousel {
+    display: none;
   }
 }
 @media (min-width: 1024px) {

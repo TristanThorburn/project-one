@@ -37,6 +37,7 @@ header{
     height:5px;
     margin:5px auto;
     transition:all 0.5s;
+    cursor: pointer;
 }
 
 .hamburger.active :nth-child(1){

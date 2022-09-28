@@ -2,6 +2,10 @@
 @use "./mixins" as *;
 
 // GENERAL-------------------------------------------------
+.is-hidden{
+    display:none;
+}
+
 .wrapper{
     max-width: 1620px;
     width:80%;

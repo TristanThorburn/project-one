@@ -67,46 +67,109 @@
     }
 }
 
-// SECTION:CAROUSEL------------------------------------------
-.carousel{
+// SECTION:CAROUSEL--------------------------------------------
+.carousel-gallery{
     background-color:$primary-green;
-    min-height:25vh;
+    position: relative;
 
-    .carousel-container{
-        display:flex;
-    } 
-    .carousel-images{
+    .carousel{
+        height:30vh;
+        overflow:hidden;
+    }
+    .track{
+        height:100%;
+        position:relative;
+        list-style:none;
+        margin:0;
+        padding:0;
+        top:7%;
+    }
+    .slide{
         width:100%;
-        margin-top:2.5vh;
+        height:26vh;
+        position:absolute;
+        transition: all 0.5s;
     }
-    .next-button, .prev-button{
-        margin-top: 10vh;
-    }
-    .next-button{
-        rotate:180deg;
+    .slide img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
     }
     .carousel-button{
-        position: relative;
-    }
-
-    ul{
-        padding:0;
-        margin:0;
-        list-style:none;
-        position:relative;
-    }
-    button{
+        position:absolute;
+        z-index:10;
         height: 30px;
         width: 30px;
+        top:50%;
+        transform:translateY(-50%);
+        border:none;
+        border-radius:50%;
+        background-color:$secondary-blue;
+        color:$primary-white;
+        cursor:pointer;
 
-        img{
-            position:absolute;
-            top:0;
-            left:0;
+        &:hover, :focus{
+            background-color:lighten($primary-black, 50%)
+        }
+        &:active{
+            color:$primary-black;
+            background-color:$primary-white;
+            border:2px solid $primary-black;
         }
     }
-    li{
-        position:absolute;
-        top:0;
+    .next-button{
+        right:4%;
+    }
+    .prev-button{
+        left:4%;
     }
 }
+    
+
+
+
+
+
+
+
+// SECTION:CAROUSEL------------------------------------------
+// .carousel{
+//     background-color:$primary-green;
+//     min-height:25vh;
+
+//     .carousel-container{
+//         display:flex;
+//     } 
+//     .carousel-images{
+//         width:100%;
+//         // margin-top:2.5vh;
+//     }
+//     .next-button, .prev-button{
+//         margin-top: 10vh;
+//     }
+//     .next-button{
+//         rotate:180deg;
+//     }
+//     .carousel-slide{
+//         width:100%;
+//     }
+//     .carousel-ul{
+//         // position: relative;
+//         margin:0;
+//         list-style:none;
+
+//         // img{
+//         //     width:100%;
+//         // }
+//     }    
+//     li{
+//         position: absolute;
+//         top:0;
+//         left:0;
+//     }
+//     button{
+//         height: 30px;
+//         width: 30px;
+//     }
+// }
+

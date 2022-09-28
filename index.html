@@ -29,7 +29,7 @@
             <li><a href="./blog.html#about" class="nav-link">About</a></li>
             <li><a href="./blog.html" class="nav-link">Blog</a></li>
             <li><a href="./contact.html" class="nav-link">Contact</a></li>
-            <li><a href="https://youtu.be/flItyHiDm7E" class="inspo">Hamburger Menu Source</a></li>
+            <li><a href="https://youtu.be/flItyHiDm7E" class="inspo nav-link">Hamburger Helper</a></li>
         </ul>
     </nav><!--.desktop-nav-bar end-->
     <div class="header-container">
@@ -40,6 +40,7 @@
     </div><!--header-container end-->
 </header>
 <body>
+<!-- SECTION: WHAT IS UNDER THE SEA? -->
     <section class="what-is">
         <div class="wrapper flex-container">
             <h2>What is under the sea?</h2>
@@ -47,6 +48,8 @@
             <a href="#find-out" class="find-out-more">Find out more</a>
         </div><!--.flex-container end-->
     </section><!--.what-is end-->
+
+<!--SECTION: NEW ADDITIONS AND FEATURES/MEET NEMO  -->
     <section class="new-and-feature">
         <div class="new-and-feature-container wrapper">
             <div class="new-and-feature-img">
@@ -67,6 +70,8 @@
             </div><!--.nemo-img end-->
         </div><!--new-and-feature-container end-->
     </section><!--.new-and-feature end-->
+
+<!--SECTION: INFORMATION AND LINKS  -->
     <section class="info-links">
         <div class="info-links-container wrapper">
             <div class="flex-container desktop-info-links">
@@ -115,8 +120,12 @@
             </div><!--.flex-container end-->
         </div><!--info-links-container end-->
     </section><!--.info-links end-->
+
+<!--BANNER  -->
     <section class="banner">
     </section><!--.banner-end-->
+
+<!--SECTION: THIS MONTH PROFILE  -->
     <section class="this-month">
         <div class="flex-container wrapper desktop-container">
             <div class="this-month-img">
@@ -129,26 +138,40 @@
             </div><!--.flex-container end-->
         </div><!--.flex-container end-->
     </section><!--.this-month end-->
-    <section class="carousel">
-        <div class="wrapper carousel-container">    
-            <div class="prev-button">
-                <button class="carousel-button"><img src="./assets/previous-svgrepo-com.svg" alt="Next image button" class="next-img"></button>
+
+<!--SECTION: (ORIGINAL) FINAL GALLERY  -->
+    <section class="final-gallery">
+        <div class="gallery-container wrapper">
+            <div>
+                <img src="./assets/gallery-image-1.jpg" alt="Young child resting hand on large aquarium looking in." class="gallery-one">
             </div>
-            <div class="carousel-images">
-                <ul>
-                    <li><img src="./assets/gallery-image-1.jpg" alt="Young child resting hand on large aquarium looking in." class="gallery-one current-slide carousel-slide"></li>
-                    <li><img src="./assets/gallery-image-2.jpg" alt="Group of people taking photos of a large shark in the aquarium" class="gallery-two carousel-slide"></li>
-                    <li><img src="./assets/gallery-image-3.jpg" alt="Groups of fish swimming around rocks and coral" class="gallery-three carousel-slide"></li>
+            <div>
+                <img src="./assets/gallery-image-2.jpg" alt="Group of people taking photos of a large shark in the aquarium" class="gallery-two">
+            </div>
+            <div>
+                <img src="./assets/gallery-image-3.jpg" alt="Groups of fish swimming around rocks and coral" class="gallery-three">
+            </div>
+        </div><!--.gallery-container end-->
+    </section><!--.final-gallery end-->
+
+<!--SECTION: (UPDATE) COVERT FINAL GALLERY TO MOBILE CAROUSEL  -->
+    <section aria-label="Newest Photos" class="carousel-gallery">
+        <div class="wrapper">    
+            <button class="carousel-button prev-button is-hidden"><</button>
+            <div class="carousel">
+                <ul class="track">
+                    <li class="current-slide slide gallery-start"><img src="./assets/gallery-image-1.jpg" alt="Young child resting hand on large aquarium looking in." class="gallery-one"></li>
+                    <li class="slide"><img src="./assets/gallery-image-2.jpg" alt="Group of people taking photos of a large shark in the aquarium" class="gallery-two"></li>
+                    <li class="slide gallery-end"><img src="./assets/gallery-image-3.jpg" alt="Groups of fish swimming around rocks and coral" class="gallery-three"></li>
                 </ul>
-            </div> 
-            <div class="next-button">
-                <button class="carousel-button"><img src="./assets/previous-svgrepo-com.svg" alt="Previous image button" class="prev-img"></button>
-            </div>   
+            </div>    
+            <button class="carousel-button next-button">></button> 
         </div>
     </section><!--.carousel end-->
     
-
-    <script src="./javascript/app.js"></script>
+<!-- JAVASCRIPT -->
+    <script src="./javascript/hamburger.js"></script>
+    <script src="./javascript/carousel.js"></script>
 </body>
 <footer>
     <p>Copyright ©️ 2018 <a href="https://www.junocollege.com">Juno College</a></p>

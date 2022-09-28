@@ -2,7 +2,7 @@
 
 // NAV BAR--------------------------------------------------------
 @media (min-width:1px) and (max-width:767px){
-    .pop-out-header, .banner{
+    .pop-out-header, .banner, .final-gallery{
         display:none;
     }
 }
@@ -21,7 +21,7 @@
 // ********************************TABLET VERTICAL**************************************************
 @media (min-width:768px){
     // GENERAL-----------------------------------------------------------
-    .mobile-nav-bar{
+    .mobile-nav-bar, .carousel-gallery{
         display:none;
     }
     .pop-out-header, .banner{
@@ -119,10 +119,19 @@
 
     // SECTION: FINAL-GALLERY-----------------------------
     .gallery-container{
+        display:flex;
+        flex-direction:column;
+    }
+    .gallery-container{
         flex-direction:row;
     }
     .gallery-one, .gallery-two, .gallery-three{
         margin:30px 0px 30px 0px;
+    }
+
+    // SECTION:CAROUSEL------------------------------------
+    .carousel{
+        display:none;
     }
 }
 
