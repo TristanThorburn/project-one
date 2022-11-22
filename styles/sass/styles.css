@@ -909,6 +909,9 @@ footer p {
   .pop-out-header img {
     width: 80%;
   }
+  .inspo {
+    display: none;
+  }
   .what-is h2 {
     margin-top: 150px;
   }
